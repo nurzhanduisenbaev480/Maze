@@ -1,0 +1,3 @@
+[submodule "Maze/vendor/spdlog"]
+    path = Maze/vendor/spdlog
+    url = https://github.com/gabime/spdlog
