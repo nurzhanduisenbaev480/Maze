@@ -18,6 +18,9 @@ project "Maze"
     targetdir ("bin/" .. outputdir .. "/%{prj.name}")
     objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+    pchheader "mzpch.h"
+    pchsource "Maze/src/mzpch.cpp"
+
     files
     {
         "%{prj.name}/src/**.h",

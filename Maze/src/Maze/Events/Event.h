@@ -2,9 +2,6 @@
 
 #include "Maze/Core.h"
 
-#include <string>
-#include <functional>
-
 namespace Maze {
 
 	enum class EventType

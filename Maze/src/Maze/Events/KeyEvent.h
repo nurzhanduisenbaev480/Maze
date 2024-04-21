@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace Maze {
 
 	class MAZE_API KeyEvent : public Event
