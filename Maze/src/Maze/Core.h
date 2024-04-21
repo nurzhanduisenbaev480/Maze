@@ -10,3 +10,5 @@
 #else
 	#error Maze supports only Windows!
 #endif // MZ_PLATFORM_WINDOWS
+
+#define BIT(x) (1 << x)

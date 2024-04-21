@@ -1,42 +1,46 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Исходные файлы">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="Maze">
+      <UniqueIdentifier>{72F5887C-5E2C-8A0D-0719-7010F32E060F}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Файлы заголовков">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
-    <Filter Include="Файлы ресурсов">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="Maze\Events">
+      <UniqueIdentifier>{16CD0915-8282-820A-0B77-7CE1772B790E}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Maze\Core.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
+    <ClInclude Include="src\Maze.h" />
     <ClInclude Include="src\Maze\Application.h">
-      <Filter>Файлы заголовков</Filter>
+      <Filter>Maze</Filter>
     </ClInclude>
-    <ClInclude Include="src\Maze.h">
-      <Filter>Файлы заголовков</Filter>
+    <ClInclude Include="src\Maze\Core.h">
+      <Filter>Maze</Filter>
     </ClInclude>
     <ClInclude Include="src\Maze\EntryPoint.h">
-      <Filter>Файлы заголовков</Filter>
+      <Filter>Maze</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Maze\Events\ApplicationEvent.h">
+      <Filter>Maze\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Maze\Events\Event.h">
+      <Filter>Maze\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Maze\Events\KeyEvent.h">
+      <Filter>Maze\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Maze\Events\MouseEvent.h">
+      <Filter>Maze\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\Maze\Log.h">
-      <Filter>Файлы заголовков</Filter>
+      <Filter>Maze</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Maze\Application.cpp">
-      <Filter>Исходные файлы</Filter>
+      <Filter>Maze</Filter>
     </ClCompile>
     <ClCompile Include="src\Maze\Log.cpp">
-      <Filter>Исходные файлы</Filter>
+      <Filter>Maze</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
