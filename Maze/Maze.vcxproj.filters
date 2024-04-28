@@ -37,6 +37,12 @@
     <ClInclude Include="src\Maze\Events\MouseEvent.h">
       <Filter>Maze\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Maze\Layer.h">
+      <Filter>Maze</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Maze\LayerStack.h">
+      <Filter>Maze</Filter>
+    </ClInclude>
     <ClInclude Include="src\Maze\Log.h">
       <Filter>Maze</Filter>
     </ClInclude>
@@ -50,6 +56,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Maze\Application.cpp">
+      <Filter>Maze</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Maze\Layer.cpp">
+      <Filter>Maze</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Maze\LayerStack.cpp">
       <Filter>Maze</Filter>
     </ClCompile>
     <ClCompile Include="src\Maze\Log.cpp">

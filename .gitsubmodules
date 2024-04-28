@@ -1,6 +1,0 @@
-[submodule "Maze/vendor/spdlog"]
-    path = Maze/vendor/spdlog
-    url = https://github.com/gabime/spdlog
-[submodule "Maze/vendor/GLFW"]
-	path = Maze/vendor/GLFW
-	url = https://github.com/TheCherno/glfw

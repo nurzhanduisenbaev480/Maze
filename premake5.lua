@@ -12,8 +12,10 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 IncludeDir = {}
 IncludeDir["GLFW"] = "Maze/vendor/GLFW/include"
+IncludeDir["Glad"] = "Maze/vendor/Glad/include"
 
 include "Maze/vendor/GLFW"
+include "Maze/vendor/Glad"
 
 project "Maze"
     location "Maze"
@@ -36,12 +38,14 @@ project "Maze"
     {
         "%{prj.name}/src",
         "%{prj.name}/vendor/spdlog/include",
-        "%{IncludeDir.GLFW}"
+        "%{IncludeDir.GLFW}",
+        "%{IncludeDir.Glad}"
     }
 
     links
     {
         "GLFW",
+        "Glad",
         "opengl32.lib"
     }
 
@@ -52,7 +56,8 @@ project "Maze"
         defines
         {
             "MZ_PLATFORM_WINDOWS",
-            "MZ_BUILD_DLL"
+            "MZ_BUILD_DLL",
+            "GLFW_INCLUDE_NONE"
         }
 
         postbuildcommands
