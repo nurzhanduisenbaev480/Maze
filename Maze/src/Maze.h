@@ -6,6 +6,7 @@
 
 // --------- MAZE LIBRARIES ------------
 #include "Maze/Application.h"
+#include "Maze/Layer.h"
 #include "Maze/Log.h"
 // --------- MAZE LIBRARIES ------------
 
