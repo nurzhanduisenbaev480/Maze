@@ -1,3 +1,6 @@
 [submodule "Maze/vendor/spdlog"]
     path = Maze/vendor/spdlog
     url = https://github.com/gabime/spdlog
+[submodule "Hazel/vendor/GLFW"]
+	path = Hazel/vendor/GLFW
+	url = ../../TheCherno/glfw.git
