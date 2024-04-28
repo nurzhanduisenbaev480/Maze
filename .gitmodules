@@ -1,0 +1,3 @@
+[submodule "Maze/vendor/GLFW"]
+	path = Maze/vendor/GLFW
+	url = https://github.com/TheCherno/glfw

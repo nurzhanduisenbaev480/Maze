@@ -10,6 +10,11 @@ workspace "Maze"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+IncludeDir = {}
+IncludeDir["GLFW"] = "Maze/vendor/GLFW/include"
+
+include "Maze/vendor/GLFW"
+
 project "Maze"
     location "Maze"
     kind "SharedLib"
@@ -30,7 +35,14 @@ project "Maze"
     includedirs
     {
         "%{prj.name}/src",
-        "%{prj.name}/vendor/spdlog/include"
+        "%{prj.name}/vendor/spdlog/include",
+        "%{IncludeDir.GLFW}"
+    }
+
+    links
+    {
+        "GLFW",
+        "opengl32.lib"
     }
 
     filter "system:windows"

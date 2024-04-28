@@ -1,5 +1,6 @@
 #pragma once
 
+#include "mzpch.h"
 #include "Maze/Core.h"
 
 namespace Maze {

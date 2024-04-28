@@ -12,6 +12,8 @@
 #include <unordered_map>
 #include <unordered_set>
 
+#include "Maze/Log.h"
+
 #ifdef MZ_PLATFORM_WINDOWS
 	#include <Windows.h>
 #endif
